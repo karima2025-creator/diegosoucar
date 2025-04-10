@@ -1,0 +1,279 @@
+/* Styles spécifiques pour la page À Propos */
+
+/* Utilisation de variables pour les couleurs (optionnel mais bonne pratique) */
+:root {
+    --primary-color-about: #4CAF50; /* Vert principal */
+    --secondary-color-about: #FFC107; /* Jaune/Orange pour accents */
+    --text-color-dark: #333;
+    --text-color-light: #555;
+    --bg-color-light: #f9f9f9;
+    --bg-color-very-light: #ffffff;
+    --border-radius: 8px;
+}
+
+/* En-tête de page spécifique */
+.about-header {
+    background: linear-gradient(135deg, var(--primary-color-about) 0%, #388E3C 100%);
+    padding: 50px 20px;
+    border-bottom: none;
+}
+
+.about-header h1 {
+    color: var(--bg-color-very-light);
+    font-size: 3rem;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+}
+
+/* Conteneur principal de la page */
+.about-page-content {
+    padding: 0; /* Le padding sera géré par sections */
+}
+
+/* Section Histoire */
+.history-section {
+    padding: 80px 0 60px 0; /* 80px en haut, 60px en bas */
+    background-color: var(--bg-color-very-light);
+}
+
+.history-section .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.history-section h2 {
+    text-align: center;
+    color: var(--text-color-dark);
+    margin-bottom: 40px;
+    font-size: 2.2rem;
+}
+
+.history-content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.history-text {
+    flex: 1;
+    color: var(--text-color-light);
+    line-height: 1.7;
+    text-align: center;
+}
+
+.history-text p {
+    margin-bottom: 15px;
+}
+
+.history-image {
+    flex-basis: 40%;
+    text-align: center;
+}
+
+.history-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* Section Valeurs */
+.values-section {
+    padding: 60px 0;
+    background-color: var(--bg-color-light);
+}
+
+.values-section .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.values-section h2 {
+    text-align: center;
+    color: var(--text-color-dark);
+    margin-bottom: 50px;
+    font-size: 2.2rem;
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.value-card {
+    background-color: var(--bg-color-very-light);
+    padding: 30px;
+    text-align: center;
+    border-radius: var(--border-radius);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.value-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.value-icon {
+    font-size: 3rem;
+    color: var(--primary-color-about);
+    margin-bottom: 20px;
+    display: inline-block;
+    background-color: #e8f5e9; /* Fond vert très clair */
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    border-radius: 50%;
+}
+
+.value-card h3 {
+    color: var(--text-color-dark);
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+}
+
+.value-card p {
+    color: var(--text-color-light);
+    line-height: 1.6;
+}
+
+/* Section Engagement */
+.commitment-section {
+    padding: 60px 0;
+    background-color: var(--bg-color-very-light);
+}
+
+.commitment-section .container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.commitment-section h2 {
+    text-align: center;
+    color: var(--text-color-dark);
+    margin-bottom: 40px;
+    font-size: 2.2rem;
+}
+
+.commitment-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.commitment-section li {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 15px;
+    color: var(--text-color-light);
+    line-height: 1.6;
+}
+
+.commitment-section li i {
+    color: var(--primary-color-about);
+    margin-right: 15px;
+    font-size: 1.2rem;
+    margin-top: 4px;
+}
+
+/* Section Équipe */
+.team-section {
+    padding: 60px 0;
+    background-color: var(--bg-color-light);
+}
+
+.team-section .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.team-section h2 {
+    text-align: center;
+    color: var(--text-color-dark);
+    margin-bottom: 50px;
+    font-size: 2.2rem;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    justify-content: center;
+}
+
+.team-member {
+    text-align: center;
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 4px solid var(--bg-color-very-light);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.team-member h3 {
+    color: var(--text-color-dark);
+    margin-bottom: 5px;
+    font-size: 1.3rem;
+}
+
+.team-member .role {
+    color: var(--primary-color-about);
+    font-weight: 600;
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+}
+
+.team-member .bio {
+    color: var(--text-color-light);
+    font-style: italic;
+    font-size: 0.95rem;
+    max-width: 250px; /* Limite largeur bio */
+    margin: 0 auto;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .history-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .history-text {
+        text-align: center;
+    }
+    .history-image {
+        margin-top: 30px;
+        flex-basis: auto;
+        max-width: 80%;
+    }
+    .team-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 30px;
+    }
+    .history-section h2,
+    .values-section h2,
+    .commitment-section h2,
+    .team-section h2 {
+        font-size: 2rem;
+    }
+}
+
+/* Styles AOS pour la page À Propos */
+[data-aos="fade-up"] {
+    opacity: 0;
+    transform: translateY(20px);
+    transition-property: opacity, transform;
+}
+
+[data-aos="fade-up"].aos-animate {
+    opacity: 1;
+    transform: translateY(0);
+} 

@@ -1,0 +1,370 @@
+/* Styles spécifiques pour la page Contact */
+
+:root {
+    --primary-color-contact: #4CAF50; /* Vert */
+    --secondary-color-contact:rgb(255, 217, 0); /* Orange */
+    --text-color-dark: #333;
+    --text-color-medium: #555;
+    --text-color-light: #777;
+    --bg-color-light: #f9f9f9;
+    --bg-color-very-light: #ffffff;
+    --border-color: #e0e0e0;
+    --border-radius: 8px;
+}
+
+/* En-tête de page spécifique - Supprimé */
+/*
+.contact-header {
+    background: linear-gradient(135deg, var(--primary-color-contact) 0%, #388E3C 100%);
+    padding: 50px 20px;
+    border-bottom: none;
+}
+
+.contact-header h1 {
+    color: var(--bg-color-very-light);
+    font-size: 3rem;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+    margin: 0 15px;
+}
+
+.contact-header .header-icon {
+    font-size: 2.5rem;
+    color: rgba(255, 255, 255, 0.8);
+}
+*/
+
+/* Conteneur principal */
+.contact-page-content {
+    padding: 80px 0 60px 0; /* Espace sous navbar et en bas */
+    background-color: var(--bg-color-light);
+    width: 100%;
+    overflow-x: hidden; /* Empêche le défilement horizontal */
+}
+
+/* Assurer le bon calcul des dimensions */
+.contact-page-content *,
+.contact-page-content *::before,
+.contact-page-content *::after {
+    box-sizing: border-box;
+}
+
+/* Titre Principal de la Page (ajouté) */
+.page-main-title {
+    text-align: center;
+    color: var(--text-color-dark);
+    font-size: 2.8rem;
+    margin-bottom: 50px; /* Espace avant le contenu */
+    font-weight: 700;
+    padding: 0 20px; /* Ajout de padding pour éviter le débordement */
+}
+
+.contact-container {
+    max-width: 1200px;
+    width: 100%; /* Ajout pour limiter la largeur au parent */
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-wrap: wrap; /* Permet le passage en colonne */
+    gap: 40px;
+    box-sizing: border-box; /* Assure que le padding est inclus dans la largeur */
+}
+
+/* Colonne Informations */
+.contact-details {
+    flex: 1;
+    min-width: 280px; /* Légèrement réduit */
+    max-width: 100%; /* Limite la largeur maximale */
+}
+
+.contact-details h2,
+.contact-form-container h2 {
+    color: var(--text-color-dark);
+    font-size: 2rem;
+    margin-bottom: 30px;
+    border-bottom: 2px solid var(--primary-color-contact);
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+.info-block {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: var(--bg-color-very-light);
+    border-radius: var(--border-radius);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    transition: box-shadow 0.3s ease;
+}
+
+.info-block:hover {
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.info-icon {
+    font-size: 1.8rem;
+    color: var(--primary-color-contact);
+    margin-right: 20px;
+    flex-shrink: 0;
+    width: 50px;
+    height: 50px;
+    background-color: #e8f5e9;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-text h3 {
+    color: var(--text-color-dark);
+    font-size: 1.2rem;
+    margin: 0 0 5px 0;
+}
+
+.info-text p {
+    color: var(--text-color-medium);
+    margin: 0;
+    line-height: 1.6;
+}
+
+.info-text a {
+    color: var(--primary-color-contact);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.info-text a:hover {
+    color: #388E3C;
+}
+
+.social-contact {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: var(--bg-color-very-light);
+    border-radius: var(--border-radius);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.social-contact h3 {
+    color: var(--text-color-dark);
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-links a {
+    color: var(--text-color-medium);
+    font-size: 1.5rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-links a:hover {
+    color: var(--primary-color-contact);
+    transform: translateY(-3px);
+}
+
+/* Colonne Formulaire */
+.contact-form-container {
+    flex: 1.5;
+    min-width: 280px; /* Légèrement réduit */
+    max-width: 100%; /* Limite la largeur maximale */
+    background-color: var(--bg-color-very-light);
+    padding: 30px;
+    border-radius: var(--border-radius);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    box-sizing: border-box; /* Assure que le padding est inclus dans la largeur */
+}
+
+.contact-form-container h2 {
+    margin-bottom: 10px; /* Moins d'espace sous le titre du form */
+}
+
+.contact-form-container p {
+    color: var(--text-color-light);
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--text-color-dark);
+    font-weight: 600;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    font-size: 1rem;
+    color: var(--text-color-medium);
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--primary-color-contact);
+    box-shadow: 0 0 0 2px rgba(76, 175, 80, 0.2);
+}
+
+.form-group textarea {
+    resize: vertical; /* Permet redimensionnement vertical */
+    min-height: 120px;
+}
+
+.submit-button {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: var(--primary-color-contact);
+    color: var(--bg-color-very-light);
+    border: none;
+    border-radius: var(--border-radius);
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.submit-button:hover {
+    background-color: #388E3C;
+    transform: translateY(-2px);
+}
+
+.submit-button:active {
+    transform: translateY(0);
+}
+
+/* Zone de statut du formulaire */
+#form-status {
+    margin-top: 15px;
+    font-weight: 600;
+}
+
+#form-status.success {
+    color: var(--primary-color-contact);
+}
+
+#form-status.error {
+    color: #e74c3c; /* Rouge */
+}
+
+/* Section Carte */
+.map-section {
+    width: 100%;
+    padding: 0 20px; /* Ajout de padding pour éviter le débordement */
+    box-sizing: border-box;
+    margin-top: 60px;
+}
+
+.map-section h2 {
+    text-align: center;
+    color: var(--text-color-dark);
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+#map-placeholder {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+#map-placeholder iframe {
+    width: 100%;
+    height: 450px;
+    border: 0;
+    display: block;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    /* Centrage Général Mobile */
+    .contact-details,
+    .contact-form-container,
+    .map-section {
+        text-align: center;
+        flex-basis: 100%; /* Force la pleine largeur quand empilé */
+        min-width: unset; /* Retire la largeur minimum sur mobile */
+    }
+
+    /* Titres H2 Centrés */
+    .contact-details h2,
+    .contact-form-container h2,
+    .map-section h2 {
+        font-size: 1.8rem;
+        display: block; /* Permet le centrage */
+        border-bottom: none; /* Optionnel: enlever le soulignement qui peut gêner */
+        padding-bottom: 0;
+        margin-left: auto; /* Centre le bloc H2 lui-même */
+        margin-right: auto;
+        margin-bottom: 30px; /* Maintient l'espace */
+    }
+
+    /* Centrage Blocs Info */
+    .info-block {
+        flex-direction: column; /* Icone au-dessus du texte */
+        align-items: center; /* Centre l'icône */
+        /* text-align: center; hérité */
+    }
+    .info-icon {
+        margin-right: 0; /* Enlève la marge latérale */
+        margin-bottom: 15px; /* Espace sous l'icône */
+    }
+
+    /* Centrage Formulaire */
+    .contact-form-container {
+        /* text-align: center; hérité */
+    }
+    .form-group label {
+        text-align: left; /* Garde les labels à gauche pour clarté */
+    }
+    .submit-button {
+        display: block; /* Pour centrage avec margin */
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* Autres ajustements */
+    .contact-container {
+        padding: 0 15px; /* Padding horizontal réduit sur mobile */
+        gap: 30px;
+    }
+    .page-main-title {
+        font-size: 2.2rem;
+        padding: 0 15px;
+    }
+
+    .map-section {
+        padding: 0 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-container {
+        padding: 0 10px;
+    }
+
+    .page-main-title {
+        font-size: 2rem;
+        padding: 0 10px;
+    }
+
+    .map-section {
+        padding: 0 10px;
+    }
+}

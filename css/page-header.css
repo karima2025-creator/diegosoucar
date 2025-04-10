@@ -1,0 +1,162 @@
+/* Styles pour l'En-tête Asymétrique */
+
+@keyframes gentleFloat {
+    0%, 100% {
+        transform: translateY(0) rotate(var(--initial-rotate, 0deg));
+    }
+    50% {
+        transform: translateY(-6px) rotate(var(--initial-rotate, 0deg)); /* Flottement plus doux */
+    }
+}
+
+body {
+    padding-top: 80px; /* Ajustez si nécessaire à la hauteur de votre navbar */
+}
+
+.page-header.asymmetric-header {
+    padding: 60px 0; /* Un peu plus d'espace vertical */
+    background: linear-gradient(120deg, #f0fff0 0%, #e0ffe0 60%, #c6ffc6 100%);
+    position: relative;
+    overflow: hidden;
+    border-bottom: none;
+}
+
+.asymmetric-header .header-content {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-text {
+    flex-basis: 50%; /* Équilibre 50/50 */
+    text-align: center; /* Centrer le texte dans sa colonne */
+    padding-right: 20px; /* Espace par rapport aux icônes */
+}
+
+.header-text h1 {
+    font-size: 3.5rem;
+    color: #388E3C;
+    font-weight: 800;
+    line-height: 1.2;
+    margin: 0;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+}
+
+.header-icon-group {
+    flex-basis: 50%; /* Équilibre 50/50 */
+    position: relative;
+    height: 160px; /* Légèrement plus haut pour l'animation */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-icon {
+    position: absolute;
+    font-size: 4rem;
+    opacity: 0.85;
+    transition: transform 0.4s ease-out, opacity 0.4s ease;
+    /* Ajout de l'animation de flottement */
+    animation: gentleFloat 4s ease-in-out infinite;
+}
+
+/* Positionnement, style et délais d'animation spécifiques des icônes */
+.header-icon.icon1 { /* Pomme - Centre/Bas du triangle */
+    color: #e74c3c;
+    font-size: 4.8rem; /* Un peu plus grande */
+    top: 35%;
+    left: 40%;
+    --initial-rotate: -10deg; /* Variable pour rotation initiale */
+    transform: rotate(var(--initial-rotate));
+    z-index: 2; /* Couche intermédiaire */
+    animation-delay: 0s;
+}
+
+.header-icon.icon2 { /* Citron - Bas Gauche */
+    color: #f1c40f;
+    font-size: 4.0rem;
+    top: 55%;
+    left: 20%;
+    --initial-rotate: 15deg;
+    transform: rotate(var(--initial-rotate));
+    z-index: 1; /* Couche inférieure */
+    animation-delay: 0.5s; /* Délai différent */
+}
+
+.header-icon.icon3 { /* Pousse - Haut Droite */
+    color: #2ecc71;
+    font-size: 3.8rem;
+    top: 10%;
+    left: 60%;
+    --initial-rotate: 20deg; /* Plus droite */
+    transform: rotate(var(--initial-rotate));
+    z-index: 3; /* Couche supérieure */
+    animation-delay: 1s; /* Délai différent */
+}
+
+/* Effet de survol sur le groupe */
+.header-icon-group:hover .header-icon {
+    opacity: 1;
+    animation-play-state: paused; /* Met en pause l'animation de flottement */
+    /* L'effet de scale est retiré pour se concentrer sur la pause */
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .header-text h1 {
+        font-size: 3rem;
+    }
+    .header-icon {
+        font-size: 3.5rem;
+    }
+    .header-icon.icon1 { font-size: 4.2rem; }
+    .header-icon.icon2 { font-size: 3.5rem; }
+    .header-icon.icon3 { font-size: 3.3rem; }
+}
+
+@media (max-width: 768px) {
+    .page-header.asymmetric-header {
+        padding: 50px 0; /* Maintien d'un padding correct */
+    }
+    .asymmetric-header .header-content {
+        flex-direction: column;
+    }
+    .header-text {
+        margin-bottom: 40px; /* Plus d'espace avant les icônes */
+        padding-right: 0; /* Plus besoin de padding */
+    }
+    .header-text h1 {
+        font-size: 2.8rem; /* Un peu plus grand sur mobile */
+    }
+    .header-icon-group {
+        width: 90%; /* Légèrement plus étroit pour éviter les bords */
+        margin: 0 auto; /* Centrer le groupe */
+        height: 150px; /* Augmentation significative de la hauteur */
+    }
+    .header-icon {
+        font-size: 3.2rem; /* Légère augmentation taille de base mobile */
+    }
+     /* Ajustement des positions pour le mode colonne - réorganisé et recentré */
+     .header-icon.icon1 { font-size: 4.2rem; left: 45%; top: 30%;}
+    .header-icon.icon2 { font-size: 3.4rem; left: 15%; top: 55%;}
+    .header-icon.icon3 { font-size: 3.2rem; left: 70%; top: 20%;}
+}
+
+@media (max-width: 480px) {
+     .header-text h1 {
+        font-size: 2.2rem;
+    }
+     .header-icon-group {
+        height: 130px; /* Hauteur ajustée pour très petits écrans */
+    }
+    .header-icon {
+        font-size: 2.8rem; /* Taille de base ajustée */
+    }
+     /* Ajustement tailles finales et positions */
+     .header-icon.icon1 { font-size: 3.8rem; left: 45%; top: 30%;}
+    .header-icon.icon2 { font-size: 3.0rem; left: 15%; top: 55%; }
+    .header-icon.icon3 { font-size: 2.8rem; left: 70%; top: 20%;}
+}
