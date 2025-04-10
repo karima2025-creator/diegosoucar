@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diego Fruits - Votre Marchand de Fruits au Sénégal</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/fruits-section.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/video-section.css">
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Preload des polices critiques -->
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/webfonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-leaf"></i>
+                </div>
+                <div class="logo-text">
+                    <span class="logo-name">Diego</span>
+                    <span class="logo-subtitle">Soukar</span>
+                </div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Accueil</a></li>
+                <li><a href="fruits.html">Fruits</a></li>
+                <li><a href="apropos.html">À Propos</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero-section">
+        <div class="hero-container">
+            <!-- Slide 1 -->
+            <div class="hero-slide active">
+                <div class="slide-content">
+                    <div class="slide-text">
+                        <span class="slide-tag">Nouvelle Collection</span>
+                        <h2 class="slide-title">Fruits Frais du Sénégal</h2>
+                        <p class="slide-description">Découvrez notre sélection exclusive de fruits de saison, cultivés avec passion dans les meilleures conditions.</p>
+                        <div class="slide-features">
+                            <div class="feature">
+                                <i class="fas fa-leaf"></i>
+                                <span>100% Naturel</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-truck"></i>
+                                <span>Livraison Rapide</span>
+                            </div>
+                        </div>
+                        <a href="fruits.html" class="slide-button">
+                            <span>Explorer</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                    <div class="slide-image">
+                        <img src="images/Slide 1.jpeg" alt="Fruits frais">
+                        <div class="image-overlay"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="hero-slide">
+                <div class="slide-content">
+                    <div class="slide-text">
+                        <span class="slide-tag">Promotion</span>
+                        <h2 class="slide-title">Livraison Express</h2>
+                        <p class="slide-description">Commandez avant 14h et recevez vos fruits le jour même. Fraîcheur garantie à votre porte.</p>
+                        <div class="slide-features">
+                            <div class="feature">
+                                <i class="fas fa-clock"></i>
+                                <span>Livraison 24h/24</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-shield-alt"></i>
+                                <span>Paiement Sécurisé</span>
+                            </div>
+                        </div>
+                        <a href="contact.html" class="slide-button">
+                            <span>Commander</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                    <div class="slide-image">
+                        <img src="images/Slide 2.png" alt="Livraison fruits">
+                        <div class="image-overlay"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="hero-slide">
+                <div class="slide-content">
+                    <div class="slide-text">
+                        <span class="slide-tag">Qualité Premium</span>
+                        <h2 class="slide-title">Fruits de Qualité Supérieure</h2>
+                        <p class="slide-description">Nos fruits sont sélectionnés avec soin pour vous offrir le meilleur de la nature.</p>
+                        <div class="slide-features">
+                            <div class="feature">
+                                <i class="fas fa-star"></i>
+                                <span>Qualité Certifiée</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-heart"></i>
+                                <span>100% Satisfait</span>
+                            </div>
+                        </div>
+                        <a href="apropos.html" class="slide-button">
+                            <span>En savoir plus</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                    <div class="slide-image">
+                        <img src="images/Slide 3.png" alt="Qualité fruits">
+                        <div class="image-overlay"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation -->
+        <div class="hero-navigation">
+            <div class="nav-dots">
+                <span class="dot active" data-slide="0"></span>
+                <span class="dot" data-slide="1"></span>
+                <span class="dot" data-slide="2"></span>
+            </div>
+            <div class="nav-arrows">
+                <button class="arrow prev">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="arrow next">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <main>
+        
+        <section class="fruits-section index-page">
+            <div class="fruits-container">
+            <h2>Nos Fruits Populaires</h2>
+                <div class="fruits-grid">
+                    <div class="fruit-card" data-fruit="mangue" data-aos="fade-up">
+                        <div class="fruit-image">
+                            <img src="images/Mangue.jpeg" alt="Mangue" loading="lazy">
+                        </div>
+                        <div class="fruit-info">
+                    <h3>Mangue</h3>
+                            <button class="view-details">Voir</button>
+                        </div>
+                    </div>
+
+                    <div class="fruit-card" data-fruit="banane" data-aos="fade-up" data-aos-delay="100">
+                        <div class="fruit-image">
+                            <img src="images/Banane.png" alt="Banane" loading="lazy">
+                        </div>
+                        <div class="fruit-info">
+                            <h3>Banane</h3>
+                            <button class="view-details">Voir</button>
+                        </div>
+                    </div>
+
+                    <div class="fruit-card" data-fruit="orange" data-aos="fade-up" data-aos-delay="200">
+                        <div class="fruit-image">
+                            <img src="images/orange.jpg" alt="Orange" loading="lazy">
+                        </div>
+                        <div class="fruit-info">
+                            <h3>Orange</h3>
+                            <button class="view-details">Voir</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Une seule modale réutilisable -->
+            <div class="fruit-modal" id="fruit-modal">
+                <div class="modal-content">
+                    <span class="close-modal">&times;</span>
+                    <div class="modal-image">
+                        <!-- L'image sera ajoutée dynamiquement -->
+                    </div>
+                    <div class="modal-info">
+                        <h3 class="modal-title">Titre</h3>
+                        <p class="price">Prix</p>
+                        <p class="description">Description</p>
+                        <button class="order-button" data-phone="+221789586031">Commander</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Vidéo -->
+        <section class="video-section" data-aos="fade-up" data-aos-duration="1000">
+            <div class="container">
+                <div class="video-content">
+                    <div class="video-text" data-aos="fade-right" data-aos-delay="200">
+                        <h2>Découvrez Notre Passion</h2>
+                        <p>Plongez dans l'univers de nos fruits et légumes frais</p>
+                        <div class="video-features">
+                            <div class="feature" data-aos="zoom-in" data-aos-delay="400">
+                                <i class="fas fa-leaf"></i>
+                                <span>100% Bio</span>
+                            </div>
+                            <div class="feature" data-aos="zoom-in" data-aos-delay="500">
+                                <i class="fas fa-truck"></i>
+                                <span>Livraison Rapide</span>
+                            </div>
+                            <div class="feature" data-aos="zoom-in" data-aos-delay="600">
+                                <i class="fas fa-heart"></i>
+                                <span>Qualité Garantie</span>
+                            </div>
+                            <div class="feature" data-aos="zoom-in" data-aos-delay="700">
+                                <i class="fas fa-star"></i>
+                                <span>Produits Premium</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-container" data-aos="fade-left" data-aos-delay="300">
+                        <div class="video-wrapper">
+                            <video id="main-video" poster="images/video-poster.jpg" playsinline muted preload="metadata">
+                                <source src="images/presentation.mp4" type="video/mp4">
+                                Votre navigateur ne supporte pas la lecture de vidéos.
+                            </video>
+                            <div class="play-overlay">
+                                <button class="play-button" data-aos="zoom-in" data-aos-delay="800">
+                                    <i class="fas fa-play"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column about-column">
+                <h3>Diego Fruits</h3>
+                <p>Votre fournisseur privilégié de fruits frais et savoureux du Sénégal. Qualité et fraîcheur garanties.</p>
+            </div>
+            <div class="footer-column links-column">
+                <h4>Liens Rapides</h4>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="fruits.html">Nos Fruits</a></li>
+                    <li><a href="apropos.html">À Propos</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-column contact-column">
+                <h4>Contactez-Nous</h4>
+                <p><i class="fas fa-map-marker-alt"></i> Dakar, Sénégal</p>
+                <p><i class="fas fa-phone-alt"></i> <a href="tel:++2217828096">+221 782 80 96</a></p>
+                <p><i class="fas fa-clock"></i> Lun-Sam: 8h-20h <br>Dim: 9h-18h</p>
+            </div>
+            <div class="footer-column social-column">
+                <h4>Suivez-Nous</h4>
+                <div class="footer-social-links">
+                    <a href="#" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/2217828096" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                </div>
+                <!-- Optionnel: Newsletter -->
+                <!-- 
+                <h4 class="newsletter-title">Newsletter</h4>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Votre email" required>
+                    <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                </form> 
+                -->
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Diego Soukar. Tous droits réservés.</p>
+            <!-- Optionnel: Liens légaux -->
+            <!--
+            <div class="footer-legal-links">
+                <a href="#">Politique de confidentialité</a> | <a href="#">Mentions Légales</a>
+            </div>
+            -->
+        </div>
+    </footer>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/2217828096" class="whatsapp-button" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Scripts optimisés -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
+    <script src="js/main.js" defer></script>
+    <script src="js/hero.js" defer></script>
+    <script src="js/video-section.js" defer></script>
+    <script src="js/fruits-section.js" defer></script>
+    
+    <script>
+        // Initialisation de AOS après le chargement de la page
+        document.addEventListener('DOMContentLoaded', function() {
+            AOS.init({
+                duration: 800,
+                easing: 'ease-in-out',
+                once: true,
+                offset: 100
+            });
+        });
+    </script>
+</body>
+</html> 
