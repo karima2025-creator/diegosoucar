@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À Propos - Diego Fruits</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/apropos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-leaf"></i>
+                </div>
+                <div class="logo-text">
+                    <span class="logo-name">Diego</span>
+                    <span class="logo-subtitle">Soukar</span>
+                </div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="fruits.html">Fruits</a></li>
+                <li><a href="apropos.html" class="active">À Propos</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main class="about-page-content">
+        <section class="history-section">
+            <div class="container">
+                <h2 data-aos="fade-up">Notre Histoire</h2>
+                <div class="history-content">
+                    <div class="history-text" data-aos="fade-up" data-aos-delay="100">
+                        <p>Diego Fruits est né de la passion pour les fruits frais et de qualité du Sénégal. Depuis notre création en [Année], nous nous engageons à vous apporter le meilleur des récoltes locales, sélectionnées avec soin et amour pour préserver toutes leurs saveurs authentiques.</p>
+                        <p>Notre mission va au-delà de la simple vente : nous souhaitons créer un lien direct entre les producteurs dévoués et vous, nos clients, en valorisant un commerce équitable et transparent.</p>
+                    </div>
+                    <div class="history-image" data-aos="fade-up" data-aos-delay="200">
+                        <img src="images/Slide 1.jpeg" alt="Illustration Histoire Diego Fruits">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="values-section">
+            <div class="container">
+                <h2 data-aos="fade-up">Nos Valeurs Fondamentales</h2>
+                <div class="values-grid">
+                    <div class="value-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="value-icon"><i class="fas fa-leaf"></i></div>
+                        <h3>Fraîcheur Garantie</h3>
+                        <p>Des champs à votre table dans les plus brefs délais pour une saveur et des nutriments préservés.</p>
+                    </div>
+                    <div class="value-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="value-icon"><i class="fas fa-heart"></i></div>
+                        <h3>Qualité Supérieure</h3>
+                        <p>Sélection rigoureuse des meilleurs fruits auprès de producteurs locaux partenaires.</p>
+                    </div>
+                    <div class="value-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="value-icon"><i class="fas fa-handshake"></i></div>
+                        <h3>Service Client Dédié</h3>
+                        <p>Votre satisfaction est notre priorité. Une équipe à l'écoute pour répondre à vos besoins.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="commitment-section">
+            <div class="container">
+                <h2 data-aos="fade-up">Notre Engagement</h2>
+                <ul data-aos="fade-up" data-aos-delay="100">
+                    <li><i class="fas fa-check-circle"></i> Soutenir activement les petits producteurs sénégalais.</li>
+                    <li><i class="fas fa-check-circle"></i> Promouvoir des pratiques agricoles durables et respectueuses de l'environnement.</li>
+                    <li><i class="fas fa-check-circle"></i> Assurer une transparence totale sur l'origine de nos produits.</li>
+                    <li><i class="fas fa-check-circle"></i> Réduire notre empreinte écologique grâce à des emballages responsables.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="team-section">
+            <div class="container">
+                <h2 data-aos="fade-up">Rencontrez Notre Équipe</h2>
+                <div class="team-grid">
+                    <div class="team-member" data-aos="fade-up" data-aos-delay="100">
+                        <img src="images/diego.jpg" alt="Diego">
+                        <h3>Diego</h3>
+                        <p class="role">Fondateur & Passionné de Fruits</p>
+                        <p class="bio">"Mon rêve est de partager les trésors fruités du Sénégal avec le plus grand nombre."</p>
+                    </div>
+                    <div class="team-member" data-aos="fade-up" data-aos-delay="200">
+                        <img src="images/assistant.jpg" alt="Mamadou">
+                        <h3>Samba</h3>
+                        <p class="role">Responsable Logistique & Sourire</p>
+                        <p class="bio">"Chaque livraison est une mission pour apporter de la fraîcheur et de la joie."</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/main.js"></script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800, // Durée de l'animation
+            easing: 'ease-in-out', // Type d'animation
+            once: true, // L'animation ne se joue qu'une fois
+            offset: 100 // Déclenchement légèrement avant que l'élément soit visible
+        });
+    </script>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column about-column">
+                <h3>Diego Fruits</h3>
+                <p>Votre fournisseur privilégié de fruits frais et savoureux du Sénégal. Qualité et fraîcheur garanties.</p>
+            </div>
+            <div class="footer-column links-column">
+                <h4>Liens Rapides</h4>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="fruits.html">Nos Fruits</a></li>
+                    <li><a href="apropos.html">À Propos</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-column contact-column">
+                <h4>Contactez-Nous</h4>
+                <p><i class="fas fa-map-marker-alt"></i> Dakar, Sénégal</p>
+                <p><i class="fas fa-phone-alt"></i> <a href="tel:+2217828096">+221 782 80 96</a></p>
+                <p><i class="fas fa-clock"></i> Lun-Sam: 8h-20h <br>Dim: 9h-18h</p>
+            </div>
+            <div class="footer-column social-column">
+                <h4>Suivez-Nous</h4>
+                <div class="footer-social-links">
+                    <a href="#" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/2217828096" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Diego Soukar. Tous droits réservés.</p>
+        </div>
+    </footer>
+</body>
+</html> 
